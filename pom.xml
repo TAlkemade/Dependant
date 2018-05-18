@@ -18,7 +18,15 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
   
-  <!-- Publish the versioned releases here -->  
+  <distributionManagement>  
+ <!-- Publish the versioned releases here -->  
+ <repository>  
+  <id>localnexus</id>  
+  <name>test</name>  
+  <url>http://localhost:8081/repository/SAMPLE-REL/</url>  
+ </repository>  
+
+ <!-- Publish the versioned releases here -->  
  <snapshotRepository>  
   <id>localnexus</id>  
   <name>test</name>  
