@@ -23,7 +23,7 @@
  <repository>  
   <id>localnexus</id>  
   <name>new</name>  
-  <url>http://localhost:8081</url>  
+  <url>http://localhost:8081/repository/SAMPLE-SNAP</url>  
   <releases>  
    <enabled>true</enabled>  
   </releases>  
