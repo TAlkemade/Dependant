@@ -18,6 +18,36 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+  <!-- download artifacts from this repo -->  
+<repositories>  
+ <repository>  
+  <id>localnexus</id>  
+  <name>new</name>  
+  <url>http://localhost:8081</url>  
+  <releases>  
+   <enabled>true</enabled>  
+  </releases>  
+  <snapshots>  
+   <enabled>true</enabled>  
+  </snapshots>  
+ </repository>  
+</repositories>  
+
+<!-- download plugins from this repo -->  
+<pluginRepositories>  
+ <pluginRepository>  
+  <id>localnexus</id>  
+  <name>nexustest</name>  
+  <url>http://localhost:8081</url>  
+  <releases>  
+   <enabled>true</enabled>  
+  </releases>  
+  <snapshots>  
+   <enabled>true</enabled>  
+  </snapshots>  
+ </pluginRepository>  
+</pluginRepositories>  
+  
   <dependencies>
     <dependency>
       <groupId>com.amistest</groupId>
